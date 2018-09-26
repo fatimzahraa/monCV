@@ -5,7 +5,7 @@ html, button, input, select, textarea{
 }
 
 html{
-	background-color:#777;
+	
 	font-size: 1em;
 	line-height: 1.4;
 	
@@ -16,6 +16,8 @@ html{
 	max-width: 1400px;
 	min-width:320px;
 	display:center;
+	border: 1px solid #ccc;	
+	box-shadow: 0 px 2px 4px rgba(0,0,0,0.2);
 	
 }
 
@@ -24,15 +26,13 @@ header img{
 	border: 1px solid #ccc;
     	border-radius: 100px;	
 	box-shadow: 0 px 2px 4px rgba(0,0,0,0.2);
-	
+		
 }
 
 header{
 	padding-top:1%;
-	background-color: #fff;
 	text-align:center;
-	height:50%;
-	 overflow: auto;
+	height:50%;	
 }
 
 h1{
@@ -50,6 +50,7 @@ margin-left:10%;
 	background-color: #e6e6e6;
 	padding:2%;
 }
+
 #ex{
 	background-color:#fff;
 		padding:2%;
@@ -80,15 +81,18 @@ padding-bottom: 10px;
 	font-weight: bold;
 	margin:10px;
 }
+
 footer{
 	color: white;
 	background-color:#0a304e;
 	padding:2%; 
 }
+
 a, a:link{
 	color: white;
 	text-decoration:none;
 }
+
 li{
 	list-style-type:none;
 }
