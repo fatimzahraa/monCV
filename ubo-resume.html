@@ -12,10 +12,13 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 	
 	<link rel="stylesheet" type="text/css" href="css/resume.css"/>
+
+
 	
 	
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
 	
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,33 +57,38 @@
 			<h2> Formations et Diplômes:</h2>  
 			
 			
-			<p itemprop="formation"><span id="date">2018-2019: </span> Université de Bretagne Occidentale – UFR des sciences – Master 2 <br>
-							<span class="space"></span>« Développement à IOgiciel des Systèmes d’informations » <br>
-							<span class="space"></span>Brest, France<br> 
+			<p itemprop="formation"><span id="date">2018-2019: </span> Université de Bretagne Occidentale – UFR des sciences – Master 2 
+			 <button class="btn" onclick="XX('detail')" > <i class="fas fa-plus fa-x3"></i></button> </p> 
+							<p id="detail" class="Element" >« Développement IOgiciel des Systèmes d’informations »<br>
+									Brest, France </p>
 			
 			
-			<p itemprop="formation"> <span id="date">2017-2018: </span> Université Mohammed 5 – Faculté des sciences – Master 1 <br>
-								<span class="space"></span>«Ingénierie du Big Data» <br>
-							<span class="space"></span>Rabat, Maroc
+			<p itemprop="formation"> <span id="date">2017-2018: </span> Université Mohammed 5 – Faculté des sciences – Master 1
+			<button class="btn" onclick="XX('detail2')" > <i class="fas fa-plus fa-x3"></i></button> </p> 
+							<p id="detail2" class="Element">«Ingénierie du Big Data» <br>
+							Rabat, Maroc </p>
 			  
-			</p>
+			</p> 
 
 
-			<p itemprop="formation"> <span id="date">2016-2017: </span>Université Hassan 2 – Faculté des sciences – Licence <br>
-							<span class="space"></span>«Mathématiques et informatique option Bases de données »<br>
-							<span class="space"></span>Casablanca, Maroc
+			<p itemprop="formation"> <span id="date">2016-2017: </span>Université Hassan 2 – Faculté des sciences – Licence 
+			<button class="btn" onclick="XX('detail3')" > <i class="fas fa-plus fa-x3"></i></button> </p> 
+							<p id="detail3" class="Element">«Mathématiques et informatique option Bases de données »<br>
+							Casablanca, Maroc </p>
 			</p>
 
 		
-			<p itemprop="formation"> <span id="date">2014-2016: </span>Université Hassan 2 – Faculté des sciences – DEUG <br>
-							<span class="space"></span>	«Mathématiques et informatique» <br>
-							<span class="space"></span>Casablanca, Maroc
+			<p itemprop="formation"> <span id="date">2014-2016: </span>Université Hassan 2 – Faculté des sciences – DEUG
+			 <button class="btn" onclick="XX('detail4')" > <i class="fas fa-plus fa-x3"></i></button> </p> 
+							<p id="detail4" class="Element">	«Mathématiques et informatique» <br>
+							Casablanca, Maroc </p>
 			</p>
 			
 			
-			<p itemprop="formation"> <span id="date">2013-2014: </span>Lycée OKBA IBNO NAFII – Baccalauréat <br>
-							<span class="space"></span>	« Sciences Mathématiques A» <br>
-							<span class="space"></span>	Casablanca, Maroc
+			<p itemprop="formation"> <span id="date">2013-2014: </span>Lycée OKBA IBNO NAFII – Baccalauréat
+			 <button class="btn" onclick="XX('detail5')" ><i class="fas fa-plus fa-x3"></i></button> </p> 
+							<p id="detail5" class="Element">	« Sciences Mathématiques A» <br>
+								Casablanca, Maroc </p>
 			</p>
 			
 	
@@ -97,23 +105,26 @@
 		<article id="comp">
 			<h2> Compétences:</h2> 
 			<dl>
-				<dt>Big Data:</dt>
-					<dd>Hadoop, Yarn, Spark ...</dd>
-				
-				<dt>Business Intelligence:</dt>
-					<dd>Talend, OWB, ODI, AWM</dd>
-				<dt>Analyse et conception</dt>
-					<dd>Merise, UML</dd>
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="Hadoop, Yarn, Spark ...">Big Data:</dt> <br>
+				<div id="tooltip"></div>
 					
-				<dt>Langages de programmation et technologies:</dt>
-					<dd>C/C++ , PHP, C#, JAVA SE, J2EE, JSF, R, HTML, CSS, JS , Bootstrap,Materialize, JQuery, Ajax, JSON</dd>
-				<dt>SGBDR:</dt>
-					<dd>SQL, PL/SQL, MySQL, Access, Oracle 11g</dd>
 				
-				<dt>Bureautique:</dt>
-					<dd>Microsoft Word, Excel, Internet, PowerPoint, Front page, Publisher, Photoshop , Design des Templates web</dd>
-				<dt>Environnement:</dt>
-					<dd>Unix, Windows</dd>
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="Talend, OWB, ODI, AWM">Business Intelligence:</dt> <br>
+				
+
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="UML,Merise">Analyse et conception</dt>  <br>
+				
+					
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="C/C++ , PHP, C#, JAVA SE, J2EE, JSF, R, HTML, CSS, JS , Bootstrap,Materialize, JQuery, Ajax, JSON">Langages de programmation et technologies:</dt> <br>
+				
+					
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="SQL, PL/SQL, MySQL, Access, Oracle 11g">SGBDR:</dt> <br>
+				
+				
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="Microsoft Word, Excel, Internet, PowerPoint, Front page, Publisher, Photoshop , Design des Templates web">Bureautique:</dt> <br>
+					
+				<dt onmouseover="tooltip.show(this)" onmouseout="tooltip.hide(this)" onmousemove="tooltip.mouseMove(this)" title="Unix, Windows">Environnement:</dt> <br>
+					
 				
 					
 			
@@ -139,12 +150,14 @@
 	
 	<footer>
 		<ul>
-			<li><i class="fab fa-facebook"></i>  <a href="https://www.facebook.com/fz.ke.3" > https://www.facebook.com/fz.ke.3 </a> </li>
+			<li><i class="fab fa-facebook"></i>    <a href="https://www.facebook.com/fz.ke.3" > https://www.facebook.com/fz.ke.3 </a> </li>
 			<li><i class="fab fa-instagram"></i>  <a href="https://www.instagram.com/fatimazahrakb" >  https://www.instagram.com/fatimazahrakb</a> </li>
 			<li><i class="fab fa-twitter"></i>  <a href="http//twitter.com" > https://www.twitter.com/kbfz </a> </li>
 		</ul>
 	</footer>
 	
 </div>
+
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
